@@ -1,29 +1,27 @@
 <template>
-  <div class="home">
-    <Banner />
+  <div class="tpl">
+    <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
-import Banner from "@/components/Banner";
 export default {
-  name: "Home",
+  name: "Tpl",
   data() {
     return {
-      msg: "Home",
+      msg: "Tpl",
     };
   },
   create() {},
   mounted() {},
   methods: {},
   computed: {},
-  components: { Banner },
+  components: {},
 };
 </script>
 
 <style lang="scss" scoped>
-.home {
+.tpl {
   width: 100%;
-  height:1000px;
 }
 </style>

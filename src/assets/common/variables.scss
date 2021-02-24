@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+// 父级：
+// isplay: -webkit-box;
+// display: -moz-box;
+// display: -ms-flexbox;
+// display: -webkit-flex;
+// display: flex;
+
+// -webkit-flex-direction: row;
+// -moz-flex-direction: row;
+// -ms-flex-direction: row;
+// -o-flex-direction: row;
+// flex-direction: row;
+
+// -webkit-justify-content: space-between;
+// -moz-justify-content: space-between;
+// -ms-justify-content: space-between;
+// -o-justify-content: space-between;
+// justify-content: space-between;
+
+// -webkit-align-items: center;
+// -moz-align-items: center;
+// -ms-align-items: center;
+// -o-align-items: center;
+// align-items: center;
+
+
+// Global css
+$ps666:#666666;
+$ps333:#333333;
+$ps07c:#07c160;
+$ps969:#969799;
+$ps052:#052748;
+
+$eee:#eeeeee;
+$f2f2:#f2f2f2;
+$f6f6:#f6f6f6;
+$f7f8:#f7f8fa;
+$fff:#ffffff;
+$ff9:#ff976a;
+$ebf:#ebf5fa;
+
+.wh100 {
+    width: 100%;
+    height: 100%;
+}
+
+.pm00 {
+    padding: 0;
+    margin: 0;
+}
+
+.one-elip {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.c-card {
+    margin-bottom: 10px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+}
+
+.f-flex {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.f-row {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+}
+
+.f-column {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+.r-flex {
+    @extend .f-flex,
+    .f-row;
+}
+
+.c-flex {
+    @extend .f-flex,
+    .f-column;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}

@@ -1,29 +1,27 @@
 <template>
-  <div class="home">
-    <Banner />
+  <div class="backtop">
+    <el-backtop target=".page-component__scroll .el-scrollbar__wrap"></el-backtop>
   </div>
 </template>
 
 <script>
-import Banner from "@/components/Banner";
 export default {
-  name: "Home",
+  name: "BackTop",
   data() {
     return {
-      msg: "Home",
+      msg: "BackTop",
     };
   },
   create() {},
   mounted() {},
   methods: {},
   computed: {},
-  components: { Banner },
+  components: {},
 };
 </script>
 
 <style lang="scss" scoped>
-.home {
+.backtop {
   width: 100%;
-  height:1000px;
 }
 </style>

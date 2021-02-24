@@ -1,0 +1,27 @@
+@charset "UTF-8";
+// Global mixin
+$vw_base: 750;
+$vh_base: 1334;
+$ft_base: 50;
+
+// 计算vw
+@function vw($px) {
+    @return ($px / $vw_base) * 100vw;
+}
+
+// 计算vh
+@function vh($px) {
+    @return ($px / $vh_base) * 100vh;
+}
+
+// 计算REM
+@function rem($px) {
+    @return ($px / $ft_base) * 1rem;
+}
+
+@mixin all-elip($num) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $num;
+    overflow: hidden;
+}

@@ -1,29 +1,27 @@
 <template>
-  <div class="home">
-    <Banner />
+  <div class="main">
+    <router-view />
   </div>
 </template>
 
 <script>
-import Banner from "@/components/Banner";
 export default {
-  name: "Home",
+  name: "Main",
   data() {
     return {
-      msg: "Home",
+      msg: "Main",
     };
   },
   create() {},
   mounted() {},
   methods: {},
   computed: {},
-  components: { Banner },
+  components: {},
 };
 </script>
 
 <style lang="scss" scoped>
-.home {
+.main {
   width: 100%;
-  height:1000px;
 }
 </style>

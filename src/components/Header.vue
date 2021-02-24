@@ -1,29 +1,28 @@
 <template>
-  <div class="home">
-    <Banner />
+  <div class="header">
+    <NavMenu />
   </div>
 </template>
 
 <script>
-import Banner from "@/components/Banner";
+import NavMenu from "./NavMenu";
 export default {
-  name: "Home",
+  name: "Header",
   data() {
     return {
-      msg: "Home",
+      msg: "Header",
     };
   },
   create() {},
   mounted() {},
   methods: {},
   computed: {},
-  components: { Banner },
+  components: { NavMenu },
 };
 </script>
 
 <style lang="scss" scoped>
-.home {
+.header {
   width: 100%;
-  height:1000px;
 }
 </style>
