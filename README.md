@@ -1,4 +1,4 @@
-# ETC
+# ECMS
 
 ## Project setup
 ```
